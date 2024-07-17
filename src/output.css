@@ -18,7 +18,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -578,21 +578,35 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-#site-navigation {
-  #primary-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .nav-menu {
-      li {
-        padding: 0 0.75rem;
+body {
+  &.page {
+    margin: 0;
+  }
+  .site-header {
+    background-color: #fbe0b3;
+    padding: 1.25rem;
+    #site-navigation {
+      #primary-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-menu {
+          li {
+            padding: 0 0.75rem;
+            a {
+              font-size: 1rem;
+            }
+          }
+        }
       }
     }
   }
-}
-
-.site-main {
-  .entry-header {
-    display: none;
+  .site-main {
+    .entry-header {
+      display: none;
+    }
+  }
+  .site-footer {
+    background-color: #fbe0b3;
   }
 }

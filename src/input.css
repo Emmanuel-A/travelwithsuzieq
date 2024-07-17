@@ -8,21 +8,37 @@
 @import "tailwindcss/utilities";
 
 
-#site-navigation {
-    #primary-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .nav-menu {
-            li {
-                padding: 0 theme('spacing.3');
+body {
+    &.page {
+        margin: 0;
+    }
+    .site-header {
+        background-color: theme('colors.beige');
+        padding: theme('spacing.5');
+        #site-navigation {
+            #primary-menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .nav-menu {
+                    li {
+                        padding: 0 theme('spacing.3');
+                        a {
+                            font-size: theme('fontSize.base');
+                        }
+                    }
+                }
             }
         }
     }
-}
 
-.site-main {
-    .entry-header {
-        display: none;
+    .site-main {
+        .entry-header {
+            display: none;
+        }
+    }
+
+    .site-footer {
+        background-color: theme('colors.beige');
     }
 }

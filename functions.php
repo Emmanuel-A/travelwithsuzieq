@@ -178,3 +178,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+//Allow shortcodes in widgets
+// add_filter ('widget_text', 'do_shortcode');
+
+// function year_shortcode () {
+// 	$year = date_i18n ('Y');
+// 	return $year;
+// }
+// add_shortcode ('year', 'year_shortcode');
