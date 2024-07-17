@@ -1,0 +1,28 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+#site-navigation {
+    #primary-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-menu {
+            li {
+                padding: 0 theme('spacing.3');
+            }
+        }
+    }
+}
+
+.site-main {
+    .entry-header {
+        display: none;
+    }
+}
