@@ -11,11 +11,27 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<footer class="site-footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					
+				</div>
+				<div class="col-md-3">
+					
+				</div>
+				<div class="col-md-3">
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="site-info">
+					<p>© <?php echo date("Y"); ?> by <?php echo get_bloginfo(); ?>.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
 
 <?php wp_footer(); ?>
 

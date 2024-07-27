@@ -131,6 +131,18 @@ function travelwithsuzieq_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	// register_sidebar( 
+	// 	array(
+	// 		'name'          => esc_html__( 'Footer area one', 'travelwithsuzieq' ),
+	// 		'id'            => 'footer_area_one',
+	// 		'description'   => 'This widget area discription',
+	// 		'before_widget' => '<section class="footer-area footer-area-one">',
+	// 		'after_widget'  => '</section>',
+	// 		'before_title'  => '<h4>',
+	// 		'after_title'   => '</h4>',
+	// 	)
+	// );
 }
 add_action( 'widgets_init', 'travelwithsuzieq_widgets_init' );
 

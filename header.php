@@ -26,24 +26,6 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'travelwithsuzieq' ); ?></a>
 
 	<header id="masthead" class="site-header flex items-stretch items-center space-x-4">
-		<div class="site-branding">
-			<?php
-			/* if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif; */
-			$travelwithsuzieq_description = get_bloginfo( 'description', 'display' );
-			if ( $travelwithsuzieq_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $travelwithsuzieq_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
 		<nav id="site-navigation" class="main-navigation items-center">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'travelwithsuzieq' ); ?></button>
 			<?php
