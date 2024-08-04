@@ -34,9 +34,9 @@
                 // Check rows exists.
                 if( have_rows('destination') ): ?>
                     <div class="container-fluid">
-                        <div class="destinations-row row d-flex justify-content-md-center">
+                        <div class="destinations-row row">
                             <?php while( have_rows('destination') ) : the_row(); ?>
-                                <span class="destination col">
+                                <span class="destination">
                                     <span class="destination-wrapper">
                                         <span class="destination-title-wrapper text-center">
                                             <span class="destination-title text-center"><?php the_sub_field('destination'); ?></span>

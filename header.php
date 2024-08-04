@@ -27,7 +27,7 @@
 
 	<header id="masthead" class="site-header flex items-stretch items-center space-x-4">
 		<nav id="site-navigation" class="main-navigation items-center">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'travelwithsuzieq' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'travelwithsuzieq' ); ?></button>
 			<?php
 			wp_nav_menu(
 				array(
