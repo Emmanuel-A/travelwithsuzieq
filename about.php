@@ -21,57 +21,38 @@
 		?>
 
 
-        <div class="container-fluid destinations">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php if( get_field('title') ): ?>
-                        <h3><?php the_field('title'); ?></h3>
-                    <?php endif; ?>
+        <div class="container-fluid about">
+            <?php if( get_field('heading') ): ?>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><?php the_field('heading'); ?></h2>
+                    </div>
                 </div>
-            </div>
+            <?php endif; ?>
+
             <div class="row">
-                <?php
-                // Check rows exists.
-                if( have_rows('destination') ): ?>
-                    <div class="container-fluid">
-                        <div class="destinations-row row d-flex justify-content-md-center">
-                            <?php while( have_rows('destination') ) : the_row(); ?>
-                                <span class="destination col">
-                                    <span class="destination-wrapper">
-                                        <span class="destination-title-wrapper text-center">
-                                            <span class="destination-title text-center"><?php the_sub_field('destination'); ?></span>
-                                        </span>
-                                        <span class="destination-image-wrapper">
-                                            <?php 
-                                                // display a sub field value
-                                                $image = get_sub_field('image'); 
-                                            ?>
-                                            <img class="destination-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                                        </span>
-                                        <span class="destination-shortcode-wrapper">
-                                            <span class="destination-shortcode"><?php the_sub_field('shortcode'); ?></span>
-                                            <img class="barcode-image" src="http://localhost:10018/wp-content/uploads/2024/07/barcode.png">
-                                        </span>
-                                        <a href="<?php the_sub_field('link'); ?>" class="destination-link explore-btn-wrapper">
-                                            <span class="explore-btn">Explore</span>
-                                            <span class="explore-icon"></span>
-                                        </a>
-                                    </span>
-                                </span>
-                            <?php endwhile; ?>
+                <?php if( get_field('title') ): ?>
+                    <div class="col-md-12">
+                        <div class="sub-heading-wrapper bg-[#ecebe9]">
+                            <h3 class="sub-heading-text"><?php the_field('title'); ?></h3>
                         </div>
                     </div>
                 <?php endif; ?>
-                <div class="container-fluid">
-                    <div class="row view-all-button-wrapper">
-                        <?php $values = get_field( 'view_all_button_link' );
-                        if ( $values ) { ?>
-                        <a href="<?php the_field('view_all_button_link'); ?>" class="view-all-btn">
-                            <?php the_field('view_all_button_text'); ?>
-                        </a>
-                        <?php } else { ?>
-                        <?php } ?>
-                    </div>
+
+                <div class="col-md-12 d-flex about-blocks-wrapper">
+                    <?php 
+                    $image = get_field('image');
+                    if( !empty( $image ) ): ?>
+                        <div class="image">
+                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if( get_field('text') ): ?>
+                        <div class="content">
+                            <p><?php the_field('text'); ?></p>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

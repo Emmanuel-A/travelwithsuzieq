@@ -155,6 +155,8 @@ function travelwithsuzieq_scripts() {
 
 	wp_enqueue_style( 'travelwithsuzieq-output', get_template_directory_uri() . '/src/output.css', array(), _S_VERSION );
 
+	wp_enqueue_script( 'travelwithsuzieq-js', get_template_directory_uri() . '/js/index.js', array(), _S_VERSION, true );
+
 	wp_enqueue_script( 'travelwithsuzieq-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

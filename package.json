@@ -18,9 +18,11 @@
   },
   "devDependencies": {
     "@wordpress/scripts": "^19.2.2",
+    "autoprefixer": "^10.4.20",
     "dir-archiver": "^1.1.1",
     "node-sass": "^7.0.1",
     "postcss-import": "^16.1.0",
+    "postcss-nesting": "^13.0.1",
     "rtlcss": "^3.5.0",
     "sass": "^1.77.8",
     "tailwindcss": "^3.4.6"
