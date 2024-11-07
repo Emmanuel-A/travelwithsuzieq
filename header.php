@@ -31,7 +31,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'travelwithsuzieq' ); ?></a>
 
 	<header id="masthead" class="site-header flex items-stretch items-center">
-		<button class="mobile-menu-btn flex items-center justify-center"><img class="w-[50px] h-[21px]" src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-mobile-menu.png'  ) ); ?>"></button>
+		<button class="mobile-menu-btn flex items-center justify-center"><img class="w-[30px] h-[21px]" src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-mobile-menu.png'  ) ); ?>"></button>
 
 		<div class="mobile-menu-slideout">
 			<nav id="site-navigation" class="main-navigation items-center">
@@ -44,9 +44,18 @@
 					);
 				?>
 			</nav><!-- #site-navigation -->
+
+			<div class="social-icons-wrapper">
+				<ul class="social-icons-list">
+					<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-instagram.png'  ) ); ?>"></a></li>
+					<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-tiktok.png'  ) ); ?>"></a></li>
+					<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-youtube.png'  ) ); ?>"></a></li>
+					<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-pinterest.png'  ) ); ?>"></a></li>
+				</ul>
+			</div>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation items-center">
+		<nav id="site-navigation" class="desktop-navigation main-navigation items-center">
 			<?php
 				wp_nav_menu(
 					array(
@@ -55,14 +64,16 @@
 					)
 				);
 			?>
-		</nav><!-- #site-navigation -->
 
-		<div class="social-icons-wrapper">
-			<ul class="social-icons-list">
-				<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-instagram.png'  ) ); ?>"></a></li>
-				<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-tiktok.png'  ) ); ?>"></a></li>
-				<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-youtube.png'  ) ); ?>"></a></li>
-				<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-pinterest.png'  ) ); ?>"></a></li>
-			</ul>
-		</div>
+			<div class="social-icons-wrapper">
+				<ul class="social-icons-list">
+					<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-instagram.png'  ) ); ?>"></a></li>
+					<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-tiktok.png'  ) ); ?>"></a></li>
+					<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-youtube.png'  ) ); ?>"></a></li>
+					<li class="social-icons-list-item"><a href="https://www.instagram.com/suzieqxo__" target="_blank"><img src="<?php echo esc_url( get_parent_theme_file_uri(  'assets/icon-pinterest.png'  ) ); ?>"></a></li>
+				</ul>
+			</div>
+		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+	
+	<div class="overlay"></div>

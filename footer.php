@@ -36,7 +36,6 @@
 						<li class="site-footer-nav-link"><a href="">FAQ</a></li>
 						<li class="site-footer-nav-link"><a href="">Terms & Conditions</a></li>
 						<li class="site-footer-nav-link"><a href="">Privacy Policy</a></li>
-						<li class="site-footer-nav-link"><a href="">Instagram</a></li>
 					</ul>
 				</div>
 			</div>
