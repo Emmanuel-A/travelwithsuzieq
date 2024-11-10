@@ -56,35 +56,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="container-fluid email-newsletter-wrapper">
-            <div class="row heading-wrapper">
-                <div class="col-md-12 text-center">
-                    <h4 class="heading">Let's Stay in Touch!</h4>
-                </div>
-            </div>
-            <div class="row d-flex">
-                <div class="col-md-4 email-newsletter-image-wrapper">
-                    <img src="http://localhost:10018/wp-content/uploads/2024/07/DC6EFAB4-017D-4C87-8FF3-64B8834B13B3-scaled.jpeg" class="email-newsletter-image">
-                </div>
-                <div class="col-md-8 email-newsletter-form-wrapper">
-                    <form class="email-newsletter-form">
-                        <h5 class="heading">Subscribe to our newsletter</h5>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email *</label>
-                            <input type="email" class="form-control inputEmail" id="inputEmail1" aria-describedby="emailHelp" required>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="email-newsletter-subscribe inputSubscribe" id="inputSubscribe" name="inputSubscribe">
-                            <label for="inputSubscribe">Yes, subscribe me to your newsletter.</label>
-                        </div>
-                        <button type="submit" class="submit-btn">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
 	</main><!-- #main -->
 
 <?php

@@ -49,7 +49,19 @@ function travelwithsuzieq_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'travelwithsuzieq' ),
+			'menu-1' => esc_html__( 'Primary', 'travelwithsuzieq' )
+		)
+	);
+
+	register_nav_menus(
+		array(
+			'footer-1' => esc_html__( 'Footer One', 'footer-one' )
+		)
+	);
+
+	register_nav_menus(
+		array(
+			'footer-2' => esc_html__( 'Footer Two', 'footer-two' )
 		)
 	);
 
@@ -131,18 +143,6 @@ function travelwithsuzieq_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
-
-	// register_sidebar( 
-	// 	array(
-	// 		'name'          => esc_html__( 'Footer area one', 'travelwithsuzieq' ),
-	// 		'id'            => 'footer_area_one',
-	// 		'description'   => 'This widget area discription',
-	// 		'before_widget' => '<section class="footer-area footer-area-one">',
-	// 		'after_widget'  => '</section>',
-	// 		'before_title'  => '<h4>',
-	// 		'after_title'   => '</h4>',
-	// 	)
-	// );
 }
 add_action( 'widgets_init', 'travelwithsuzieq_widgets_init' );
 
